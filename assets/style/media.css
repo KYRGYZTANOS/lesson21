@@ -1,0 +1,29 @@
+@media (max-width: 768px) {
+    .container {
+        max-width: 615px;
+    }
+    .header__nav {
+        display: none;
+    }
+    .grid__card {
+        display: grid;
+        column-gap: 20px;
+    }
+    
+}
+@media (max-width: 390px) {
+    .container {
+        max-width: 300px;
+    }
+    .about .container {
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    .about__right {
+       text-align: center;
+    }
+    .card .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

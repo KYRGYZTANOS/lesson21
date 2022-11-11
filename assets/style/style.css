@@ -3,6 +3,7 @@
 :root {
     --light: #fff ;
     --dark: rgb(27, 25, 25) ;
+    --gray:  #666666;
 }
 
 /* BASE CONFING */
@@ -12,7 +13,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Libre Franklin', Arial, Helvetica, sans-serif;
 }
 a {
     color: inherit;
@@ -25,8 +26,111 @@ button {
 /* BASE CONFING *
 /* UNIQUE */
 .container {
-    max-width: 1220px;
+    max-width: 1360px;
     padding: 0 10px;
     margin: 0 auto;
 }
 /* UNIQUE */
+/* HEADER */
+.header {
+    height: 90px;
+    border: 1px solid rgb(193, 187, 187);
+}
+.header .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo {
+    color: var(--dark);
+}
+.header__nav {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--dark);
+    word-spacing: 40px;
+}
+/* HEADER */
+/* ABOUT */
+.about .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 59px;
+}
+.about__left {
+    padding-right: 51px;
+}
+.about__sm-title {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--dark);
+}
+.about__title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: var(--dark);
+    padding: 18px 0 27px 0;
+    width: 429px;
+}
+.about__desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--gray);
+    padding-bottom:28px ;
+    width:419px ;
+}
+.about__sm-desc {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--dark);
+}
+/* ABOUT */
+/* CARD */
+.card {
+    padding-top: 60px ;
+}
+.card .container {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    column-gap:20px ;
+}
+
+.card__sm-title {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--gray);
+    padding-top: 25px;
+}
+.card__title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: var(--dark);
+    width: 327px;
+    padding: 18px 0 15px 0;
+}
+.card__sm-desc {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--dark);
+    padding-bottom:98px ;
+}
+/* CARD */
